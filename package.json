@@ -9,6 +9,8 @@
   },
   "type": "module",
   "scripts": {
-      "start": "node --env-file=.env server.js"
+      "build": "cp example.env .env",
+      "start": "node --env-file=.env server.js",
+      "test": "node --env-file=.env test.js"
   }
 }
